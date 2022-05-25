@@ -50,6 +50,11 @@ namespace Quest
                 "cucumber green"
             };
 
+            Hat FedoraObject = new Hat
+            {
+                ShininessLevel = 90
+            };
+
             Robe rando = new Robe
             {
                 Colors = colors,
@@ -59,7 +64,7 @@ namespace Quest
             // Make a new "Adventurer" object using the "Adventurer" class
             Console.Write("Please enter your name: ");
             string adventurerName = Console.ReadLine();
-            Adventurer theAdventurer = new Adventurer(adventurerName, rando);
+            Adventurer theAdventurer = new Adventurer(adventurerName, rando, FedoraObject);
             Console.WriteLine(theAdventurer.GetDescription());
             // A list of challenges for the Adventurer to complete
             // Note we can use the List class here because have the line "using System.Collections.Generic;" at the top of the file.
